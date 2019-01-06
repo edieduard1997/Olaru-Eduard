@@ -1,0 +1,74 @@
+<!-- tagurile semantice folosite: header, nav, section, footer -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Proiect Tehnici Web</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body onload="createTable()" onmousemove="myFunction(event)">
+
+<header class="header">
+  <h1>UltraBOOK DELL</h1>
+</header>
+
+<nav class="navbar">
+  <a href="home.html">Home</a>
+  <a href="apple.html">Apple</a>
+  <a href="asus.html">Asus</a>
+  <a href="dell.html" class="active">Dell</a>
+
+
+</nav>
+
+<section>
+  <aside class = "row">
+    <aside class = "col-6">
+      <h2>
+        Singurul afisaj InfinityEdge de 15,6" din lume:
+      </h2>
+      <p2>
+        Afisajul aproape fara margini maximizeaza spatiul pe ecran,
+        integrand un afisaj de 15,6" intr-un laptop de aproape 14",
+        multumita cadrului de numai 5,7 mm. Cu afisajul UltraSharp 4K Ultra HD,
+        puteti vedea in mod detaliat fiecare pixel, fara a fi necesar sa mariti
+        imaginea. Cu 6 milioane mai multi pixeli decat Rezolutia Full HD
+        si cu 3 milioane mai mult decat al sistemului MacBook Pro, va puteti editati
+        imaginile cu mare precizie fara grija.
+      </p2>
+    </aside>
+    <aside class = "col-6">
+      <img src="assets/img/ultrabook.jpg" id="img1">
+    </aside>
+  </aside>
+</section>
+<section class="reviews">
+  <div class="text-center">
+    <h2>Adauga un review</h2>
+  </div>
+  <p>
+    <input type="button" id="addRow" value="Adaugă un review" onclick="addRow()" />
+  </p>
+
+  <!--In acest div va fi adaugat tabelul-->
+  <div id="content"></div>
+
+  <div id="info"></div>
+
+</section>
+
+<div class="news-story">
+
+</div>
+
+
+<script src="assets/js/javascript.js"></script>
+<footer class="footer">
+  <h2>Nu uitati de review!</h2>
+</footer>
+
+</body>
+</html>
